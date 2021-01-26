@@ -19,6 +19,10 @@ Copy the markdown snippet and change the `page`.
 
 `$ yarn start`
 
+## License
+
+[MIT][license-url] © AkiJoey
+
 [license-image]: https://img.shields.io/github/license/akijoey/views-badge
 [license-url]: https://github.com/akijoey/views-badge/blob/master/LICENSE
 [views-image]: https://views-badge.glitch.me/views-badge
