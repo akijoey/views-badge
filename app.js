@@ -20,7 +20,7 @@ app.get('/:key', async (req, res) => {
         message: (result.value || '0').toString(),
         label: label || 'views',
         color: color || 'blue',
-        style: style || 'flat-square'
+        style: style || 'flat'
       })
     )
   })
