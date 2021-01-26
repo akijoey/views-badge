@@ -1,0 +1,46 @@
+{
+  "name": "views-badge",
+  "version": "1.0.0",
+  "description": "A badge generator service to count views.",
+  "scripts": {
+    "start": "node app",
+    "lint": "eslint .",
+    "test": "npm run lint",
+    "format": "prettier -w ."
+  },
+  "author": "AkiJoey <akijoey@akijoey.com> (https://akijoey.com)",
+  "license": "MIT",
+  "dependencies": {
+    "badge-maker": "^3.3.0",
+    "countapi-js": "^1.0.2",
+    "express": "^4.17.1",
+    "md5": "^2.3.0"
+  },
+  "devDependencies": {
+    "@akijoey/eslint-config": "latest",
+    "@akijoey/prettier-config": "latest",
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "eslint": "^7.14.0",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.5.2",
+    "prettier": "^2.2.1"
+  },
+  "eslintConfig": {
+    "extends": "@akijoey"
+  },
+  "prettier": "@akijoey/prettier-config",
+  "commitlint": {
+    "extends": "@commitlint/config-conventional"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "*.js": "eslint --fix",
+    "*.{js,json,md}": "prettier -w"
+  }
+}
