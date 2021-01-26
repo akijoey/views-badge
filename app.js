@@ -14,7 +14,11 @@ app.get('/', (req, res) => {
 app.get('/:key', async (req, res) => {
   const { label, color, style } = req.query
   countapi.hit(project.name, md5(req.params.key)).then(result => {
-    res.setHeader('Content-Type', 'image/svg+xml')
+    res.set({
+      'Content-Type': 'image/svg+xml',
+      'Cache-Control': 'no-cache,max-age=0',
+      Expires: new Date(new Date().getTime() - 600000).toUTCString()
+    })
     res.send(
       makeBadge({
         message: (result.value || '0').toString(),

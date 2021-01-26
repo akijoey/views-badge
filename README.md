@@ -9,7 +9,7 @@ A badge generator service to count visitors of your markdown file.
 
 Copy the markdown snippet and change the `page`.
 
-`![visitors](https://views-badge.glitch.me/{page})`
+`![views](https://views-badge.glitch.me/{page})`
 
 ## Install
 
