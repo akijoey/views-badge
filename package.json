@@ -1,7 +1,7 @@
 {
   "name": "views-badge",
   "version": "1.0.0",
-  "description": "A badge generator service to count views.",
+  "description": "A badge generator service to count page views.",
   "scripts": {
     "start": "node app",
     "lint": "eslint .",

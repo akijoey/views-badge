@@ -3,7 +3,7 @@
 [![license][license-image]][license-url]
 [![views][views-image]][views-url]
 
-A badge generator service to count visitors of your markdown file.
+A badge generator service to count page views.
 
 ## Usage
 
