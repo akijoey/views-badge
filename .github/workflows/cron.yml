@@ -6,4 +6,4 @@ jobs:
   request:
     runs-on: ubuntu-latest
     steps:
-      - run: curl https://views-badge.glitch
+      - run: curl https://views-badge.glitch.me
