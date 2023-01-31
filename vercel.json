@@ -1,0 +1,11 @@
+{
+  "functions": {
+    "*.js": {}
+  },
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/app"
+    }
+  ]
+}
