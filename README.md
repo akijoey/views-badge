@@ -9,7 +9,7 @@ A badge generator service to count page views.
 
 Copy the markdown snippet and change the `page`.
 
-`![views](https://views-badge.glitch.me/{page})`
+`![views](https://views-badge.vercel.app/{page})`
 
 ## Install
 
@@ -25,5 +25,5 @@ Copy the markdown snippet and change the `page`.
 
 [license-image]: https://img.shields.io/github/license/akijoey/views-badge
 [license-url]: https://github.com/akijoey/views-badge/blob/master/LICENSE
-[views-image]: https://views-badge.glitch.me/views-badge
+[views-image]: https://views-badge.vercel.app/views-badge
 [views-url]: https://github.com/akijoey/views-badge
