@@ -15,9 +15,9 @@ Copy the markdown snippet and change the `page`.
 
 `$ yarn install --production`
 
-## Start
+## Serve
 
-`$ yarn start`
+`$ yarn serve`
 
 ## License
 
