@@ -9,7 +9,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "serve": "node app",
+    "serve": "node index",
     "lint": "devkit lint",
     "test": "devkit test",
     "format": "devkit format",
