@@ -1,5 +1,5 @@
 const express = require('express')
-const countapi = require('countapi-js')
+const countapi = require('./lib/countapi')
 const { makeBadge } = require('badge-maker')
 const md5 = require('md5')
 
