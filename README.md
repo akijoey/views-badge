@@ -11,13 +11,33 @@ Copy the markdown snippet and change the `page`.
 
 `![views](https://views-badge.vercel.app/{page})`
 
-## Install
+## Deploy
+
+Install dependencies.
 
 `$ yarn install --production`
 
-## Serve
+Start service.
 
 `$ yarn serve`
+
+## Docker
+
+Build image.
+
+`$ docker build -t views-badge .`
+
+Run container.
+
+`$ docker run -d -p 8000:8000 --name views-badge views-badge`
+
+## Configuration
+
+| Environment variables | Description                                                                                                                                     |
+| --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| `BASE_API_PATH`       | The counter service API (default is `https://countapi.xyz`) can be replaced with a self-hosted [CountAPI](https://github.com/akijoey/countapi). |
+| `HOST`                | The hostname or IP address of the service.                                                                                                      |
+| `PORT`                | The port number of the service.                                                                                                                 |
 
 ## License
 
